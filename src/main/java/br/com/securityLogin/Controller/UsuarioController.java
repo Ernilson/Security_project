@@ -26,7 +26,7 @@ public class UsuarioController {
         this.encoder = encoder;
     }
 
-    @GetMapping("/ListarTodos")
+    @GetMapping("/listarTodos")
    public ResponseEntity<List<UsuarioModel>> ListaTodos(){
        return ResponseEntity.ok(usuarioRepository.findAll());
    }

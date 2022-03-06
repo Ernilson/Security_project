@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
+@SpringBootApplication
 public class SecurityLoginApplication {
 
 	public static void main(String[] args) {
@@ -20,3 +20,4 @@ public class SecurityLoginApplication {
 		return encoder;
 	}
 }
+//(exclude = {SecurityAutoConfiguration.class})
